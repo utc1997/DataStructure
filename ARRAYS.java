@@ -16,7 +16,7 @@ class Student
 public class ARRAYS 
 { 
     
-    // Driver code 
+    // This is Driver code 
     public static void main (String[] args) 
     { 
         // declares an Array of integers. 
