@@ -9,7 +9,11 @@ class LinkedList
     { 
         int data; 
         Node next; 
-        Node(int d) {data = d; next = null; } 
+        Node(int d)
+         { 
+             data = d;
+             next = null;
+         } 
     } 
 
 
@@ -64,13 +68,13 @@ class LinkedList
   
   
 	/* Inserts a new node in between the given node. */
-	void addBtw (int srdata, int d)
+	void addBtw (int searchData, int d)
     {
 		// make a copy of head for traveling
         Node travel=head;
 		
 		// search the element after which u have to add
-        while(travel.data!=srdata)
+        while(travel.data!=searchData)
         {
             travel=travel.next;
         }
