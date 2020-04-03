@@ -15,6 +15,8 @@ class Student
 // Elements of array are objects of a class Student. 
 public class ARRAYS 
 { 
+    
+    // Driver code 
     public static void main (String[] args) 
     { 
         // declares an Array of integers. 
