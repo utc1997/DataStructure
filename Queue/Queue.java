@@ -1,5 +1,7 @@
 // Java program for array implementation of queue 
 
+package Queue;
+
 // A class to represent a queue 
 class Queue
 {

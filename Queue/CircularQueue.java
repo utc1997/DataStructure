@@ -1,5 +1,7 @@
 // Program for insertion and deletion in Circular Queue 
-public class CircularQueue 
+package Queue;
+
+public class CircularQueue
 {   
     // Initialize front and rear 
      int rear, front; 

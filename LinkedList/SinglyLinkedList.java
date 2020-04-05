@@ -1,5 +1,7 @@
 // A complete working Java program to demonstrate all insertion methods 
 // on linked list 
+package LinkedList;
+
 class SinglyLinkedList 
 { 
     Node head;  // head of list 
