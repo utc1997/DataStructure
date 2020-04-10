@@ -72,7 +72,40 @@ public class DoublyLinkedList
     } 
   
 
+
+    /* Given a node as next_node, insert a new node before the given node */
+    void insertBefore( Node next_node, int new_data)  
+    {  
+        /*1. check if the given next_node is NULL */
+        if (next_node == null) {  
+            System.out.println("the given next node cannot be NULL");  
+            return;  
+        }  
     
+        /* 2. allocate new node */
+        Node new_node = new Node(new_data);  
+    
+        /* 3. Make prev of new node as prev of next_node */
+        new_node.prev = next_node.prev;  
+    
+        /* 4. Make the prev of next_node as new_node */
+        next_node.prev = new_node;  
+    
+        /* 5. Make next_node as next of new_node */
+        new_node.next = next_node;  
+    
+        /* 6. Change next of new_node's previous node */
+        if (new_node.prev != null)  
+            new_node.prev.next = new_node;  
+        /* 7. If the prev of new_node is NULL, it will be 
+        the new head node */
+        else
+            head = new_node; 
+      
+    }  
+
+   
+
     // Add a node at the end of the list 
     void append(int new_data) 
     { 
@@ -148,6 +181,9 @@ public class DoublyLinkedList
         // Insert 8, after 7. So linked list becomes 1->7->8->6->4->NULL 
         dll.InsertAfter(dll.head.next, 8); 
   
+        // Insert 15, before 8. So linked list becomes 1->7->8->6->4->NULL 
+        dll.insertBefore(dll.head.next, 15);
+
         System.out.println("Created DoublyLinkedList is: "); 
         dll.printlist(dll.head); 
     } 
