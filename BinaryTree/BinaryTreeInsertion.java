@@ -1,3 +1,4 @@
+package BinaryTree;
 // Java program to insert element in binary tree 
 import java.util.LinkedList; 
 import java.util.Queue; 
@@ -6,7 +7,8 @@ public class BinaryTreeInsertion{
        
     /* A binary tree node has key, pointer to  
     left child and a pointer to right child */
-    static class Node { 
+    static class Node 
+    { 
         int key; 
         Node left, right; 
           
@@ -19,7 +21,7 @@ public class BinaryTreeInsertion{
     } 
 
     static Node root; 
-    //static Node temp = root; 
+    
       
     /* Inorder traversal of a binary tree*/
     static void inorder(Node temp) 
