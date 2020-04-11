@@ -1,3 +1,5 @@
+package BST;
+
 // Java program to demonstrate insert operation in binary search tree 
 class BSTinsertion { 
   

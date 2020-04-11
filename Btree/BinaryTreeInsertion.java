@@ -1,3 +1,5 @@
+package Btree;
+
 //package BinaryTree;
 // Java program to insert element in binary tree 
 import java.util.LinkedList; 

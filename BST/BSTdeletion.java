@@ -1,3 +1,5 @@
+package BST;
+
 // Java program to demonstrate delete operation in binary search tree 
 class BSTdeletion 
 { 
