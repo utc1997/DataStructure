@@ -1,4 +1,4 @@
-package BinaryTree;
+//package BinaryTree;
 // Java program to insert element in binary tree 
 import java.util.LinkedList; 
 import java.util.Queue; 
